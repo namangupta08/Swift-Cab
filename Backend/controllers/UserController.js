@@ -16,8 +16,8 @@ module.exports.registerUser = async (req, res, next) => {
   const hashedPassowrd = await userModel.hashPassowrd(password);
 
   const user = await createUser({
-    firstName: fullname.firstname,
-    lastName : fullname.lastname,
+    firstname: fullname.firstname,
+    lastname : fullname.lastname,
     email,
     password: hashedPassowrd,
   });
