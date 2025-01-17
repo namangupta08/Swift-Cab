@@ -26,3 +26,4 @@ module.exports.registerUser = async (req, res, next) => {
 
   res.status(200).json({ token, user });
 };
+
