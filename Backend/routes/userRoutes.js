@@ -1,7 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const { body } = require("express-validator");
-const { registerUser , loginUser } = require("../controllers/UserController");
+const { registerUser , loginUser , getUserProfile , logoutUser } = require("../controllers/UserController");
+const { authUser } = require("../middlewares/auth.middleware")
 
 router.post(
   "/register",
@@ -23,5 +24,8 @@ router.post("/login", [
     .isLength({ min: 6 })
     .withMessage("Password must be atleast 3 character long"),
 ] , loginUser);
+
+router.get("/profile" , authUser ,  getUserProfile)
+router.get("/logout" , authUser , logoutUser)
 
 module.exports = router;
