@@ -10,7 +10,7 @@ module.exports.createCaptain = async ({
     plate,
     vehicleType,
 }) => {
-    if(!firstname || !email || !password || !color || !capacity || !plate || vehicleType){
+    if(!firstname || !email || !password || !color || !capacity || !plate || !vehicleType){
         throw new Error('All fields are required')
     }
 
