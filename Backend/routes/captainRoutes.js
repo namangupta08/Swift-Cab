@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { body } = require("express-validator");
-const { registerCaptain } = require("../controllers/CaptainController");
+const { registerCaptain , loginCaptain } = require("../controllers/CaptainController");
 
 router.post(
   "/register",
@@ -28,5 +28,15 @@ router.post(
   ],
   registerCaptain
 );
+
+router.post('/login' , 
+    [
+        body("email").isEmail().withMessage("Inavlid email"),
+        body("password")
+            .isLength({ min: 6 })
+            .withMessage("Password must be atleast 3 character long")
+    ],
+    loginCaptain
+)
 
 module.exports = router;
