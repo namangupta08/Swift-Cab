@@ -48,4 +48,3 @@ module.exports.loginCaptain = async (req,res,next) =>{
 
     const captain = await captainModel.findOne({email}).select('+password')
 }
-
