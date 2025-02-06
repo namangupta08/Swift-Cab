@@ -1,7 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const { body } = require("express-validator");
-const { registerCaptain , loginCaptain } = require("../controllers/CaptainController");
+const { registerCaptain , loginCaptain, getCaptainProfile, logoutCaptain } = require("../controllers/CaptainController");
+const { authCaptain } = require("../middlewares/auth.middleware");
 
 router.post(
   "/register",
@@ -39,6 +40,9 @@ router.post('/login' ,
     loginCaptain
 )
 
-router.get('/profile' , [])
+router.get('/profile' , authCaptain , getCaptainProfile)
+router.get('/logout' , authCaptain , logoutCaptain)
+
+
 
 module.exports = router;
