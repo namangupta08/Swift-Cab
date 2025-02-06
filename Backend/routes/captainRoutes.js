@@ -39,4 +39,6 @@ router.post('/login' ,
     loginCaptain
 )
 
+router.get('/profile' , [])
+
 module.exports = router;
