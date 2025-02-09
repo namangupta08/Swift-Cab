@@ -4,7 +4,22 @@ import { Link } from "react-router-dom";
 const UserLogin = () => {
     
     const [email, setEmail] = useState("")
-  
+    const [password, setPassword] = useState('')
+    const [userData, setUserData] = useState({})
+
+    const submitHandler = (e) => {
+        e.preventDefault(); 
+
+        
+        setUserData({
+            email:email,
+            password:password
+        })
+        console.log(userData)
+        setEmail('')
+        setPassword('')
+    }
+   
     return (
     <div className=" p-7 flex flex-col justify-between h-screen">
       <div>
@@ -13,13 +28,14 @@ const UserLogin = () => {
           src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png"
           alt=""
         />
-        <form>
+        <form onSubmit={(e) => {submitHandler(e)}}>
           <h3 className=" text-lg font-medium mb-2">What is your Email</h3>
           <input
             className=" bg-[#eeeeee] mb-7 rounded px-4 py-2 border w-full text-lg placeholder:text-base"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value) } 
+            
             required
             placeholder="email@example.com"
           />
@@ -30,6 +46,8 @@ const UserLogin = () => {
             type="password"
             required
             placeholder="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
 
           <button className="  flex w-full items-center justify-center bg-black text-white py-3 rounded-lg mt-5">
