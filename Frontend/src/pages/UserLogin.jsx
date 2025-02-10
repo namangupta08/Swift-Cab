@@ -50,7 +50,7 @@ const UserLogin = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
 
-          <button className="  flex w-full items-center justify-center bg-black text-white py-3 rounded-lg mt-5">
+          <button className=" font-bold  flex w-full items-center justify-center bg-black text-white py-3 rounded-lg mt-5">
             Login
           </button>
           
@@ -59,9 +59,10 @@ const UserLogin = () => {
       </div>
 
       <div>
-      <button className="  flex w-full items-center justify-center bg-[#F1D163] text-black py-3 rounded-lg mt-5">
+      <Link to='/captain-login'
+      className="  flex w-full items-center font-bold justify-center bg-[#36ae3cc9] text-black py-3 rounded-lg mt-5">
             Sign in as Captain
-          </button>
+          </Link>
       </div>
     </div>
   );

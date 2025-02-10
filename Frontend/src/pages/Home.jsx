@@ -4,10 +4,10 @@ import Airport from '../assets/Airport-Fall.webp'
 const Home = () => {
   return (
     <div>
-      <div className="w-full pt-8 h-screen bg-red-400 flex flex-col justify-end"
+      <div className="w-full pt-8 h-screen  flex flex-col justify-end bg-cover"
         style={{ 
         backgroundImage: `url(${Airport})`, 
-        backgroundSize: '270%', 
+        backgroundSize: 'cover', 
         backgroundPosition: '20% center', 
         backgroundRepeat: 'no-repeat' 
       }}
