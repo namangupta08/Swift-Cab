@@ -21,4 +21,3 @@ const UserProtectedWrapper = ({ children }) => {
 
 export default UserProtectedWrapper;
 
-
