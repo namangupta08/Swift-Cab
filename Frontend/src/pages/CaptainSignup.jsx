@@ -1,6 +1,7 @@
-import { useState } from "react"
+import React, { useState } from "react"
 import { FaArrowRight } from "react-icons/fa6"
 import { Link } from "react-router-dom"
+import { CaptainDataContext } from "../context/CaptainContext"
 
 
 const CaptainSignup = () => {
@@ -9,6 +10,8 @@ const CaptainSignup = () => {
             const [firstName, setfirstName] = useState('')
             const [lastName, setLastName] = useState('')
             const [userData, setUserData] = useState({})
+
+            const {captain , setCaptain} = React.useContext(CaptainDataContext);
         
             const submitHandler = (e) => {
                 e.preventDefault();
