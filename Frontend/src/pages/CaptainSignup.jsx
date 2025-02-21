@@ -10,6 +10,7 @@ const CaptainSignup = () => {
             const [firstName, setfirstName] = useState('')
             const [lastName, setLastName] = useState('')
             const [userData, setUserData] = useState({})
+
             
 
             const {captain , setCaptain} = React.useContext(CaptainDataContext);
