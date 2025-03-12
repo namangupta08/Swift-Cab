@@ -30,6 +30,10 @@ const captainSchema = new mongoose.Schema({
     enum: ["active" , "inactive"],
     default: "inactive",
   },
+  socketId: {
+        type: String,
+  },
+
   vehicle:{
     color:{
         type: String,
@@ -53,14 +57,18 @@ const captainSchema = new mongoose.Schema({
     },
   },
   location:{
-    lat:{
+    ltd:{
         type: Number,
     },
     lng:{
         type: Number,
     },
   },
+  
 });
+
+captainSchema.index({ 'location.lng': '2dsphere', 'location.ltd': '2dsphere' });
+
 
 captainSchema.methods.generateAuthToken = function () {
     const token = jwt.sign({ _id: this._id }, process.env.JWT_SECRET , {expiresIn:'24h'});

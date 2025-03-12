@@ -11,28 +11,27 @@ const UserLogin = () => {
   const navigate = useNavigate();
   const { user, setUser } = React.useContext(UserDataContext);
 
-  const submitHandler =  async (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
 
     const userData = {
-      email:email,
-      password:password,
+      email: email,
+      password: password
     }
 
-    const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/users/login` , userData)
-    
+    const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/users/login`, userData)
 
-    if(response.status === 200){
-      const data = response.data;
-      setUser(data.user);
-      localStorage.setItem('token' , JSON.stringify(data.token));
-      navigate('/home');
+    if (response.status === 200) {
+      const data = response.data
+      setUser(data.user)
+      localStorage.setItem('token', data.token)
+      navigate('/home')
     }
 
-    console.log(userData);
-    setEmail("");
-    setPassword("");
-  };
+
+    setEmail('')
+    setPassword('')
+  }
 
   return (
     <div className=" p-7 flex flex-col justify-between h-screen">
