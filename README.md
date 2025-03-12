@@ -21,7 +21,8 @@ The frontend of **Uber Clone** is built with:
 - **React.js** ⚛️ – For a dynamic and responsive user interface.  
 - **Leaflet.js** 🗺️ – For interactive live location tracking.  
 - **OpenStreetMap** 🌍 – To display locations and route suggestions.  
-- **Axios** 🔄 – For API requests to communicate with the backend.  
+- **Axios** 🔄 – For API requests to communicate with the backend.
+- **Socket.IO Client** ⚡ – For real-time ride updates.  
 
 ---
 
@@ -34,7 +35,8 @@ The backend of **Uber Clone** is powered by:
 - **MongoDB** 💾 – A NoSQL database to store users, captains, and ride details.  
 - **bcrypt.js** 🔐 – For hashing passwords securely.  
 - **JWT (JSON Web Token)** 🔑 – For secure user authentication.  
-- **LocationIQ API** 🌍 – To fetch latitude and longitude coordinates for locations.  
+- **LocationIQ API** 🌍 – To fetch latitude and longitude coordinates for locations.
+- **Socket.IO** ⚡ – For real-time communication between users and captains.  
 
 ---
 
