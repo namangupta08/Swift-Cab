@@ -1,6 +1,6 @@
-# Uber Clone 🚖🌍  
+# Swift Cab 🚖🌍  
 
-Welcome to **Uber Clone**, a full-stack ride-hailing application built using the **MERN stack**. 🚀 This app allows **users to book rides** and **captains to accept them**, providing real-time ride tracking and seamless geolocation services. With secure authentication, accurate distance calculations, and live tracking, **Uber Clone** delivers a smooth and interactive experience for both passengers and drivers.  
+Welcome to **Swift Cab**, a full-stack ride-hailing application built using the **MERN stack**. 🚀 This app allows **users to book rides** and **captains to accept them**, providing real-time ride tracking and seamless geolocation services. With secure authentication, accurate distance calculations, and live tracking, **Swift Cab** delivers a smooth and interactive experience for both passengers and drivers.  
 
 ---
 
@@ -16,7 +16,7 @@ Welcome to **Uber Clone**, a full-stack ride-hailing application built using the
 
 ## Frontend 🎨  
 
-The frontend of **Uber Clone** is built with:  
+The frontend of **Swift Cab** is built with:  
 
 - **React.js** ⚛️ – For a dynamic and responsive user interface.  
 - **Leaflet.js** 🗺️ – For interactive live location tracking.  
@@ -28,7 +28,7 @@ The frontend of **Uber Clone** is built with:
 
 ## Backend 🖥️  
 
-The backend of **Uber Clone** is powered by:  
+The backend of **Swift Cab** is powered by:  
 
 - **Node.js** 🚀 – For building a scalable server-side application.  
 - **Express.js** ⚡ – A fast and lightweight web framework.  
