@@ -121,6 +121,7 @@ const CaptainRiding = () => {
           <i className="ri-logout-box-r-line text-lg font-bold"></i>
         </Link>
       </div>
+      
 
       {/* Map Container */}
       <div className="h-4/5 w-full relative z-0">
