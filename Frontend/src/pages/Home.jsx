@@ -227,11 +227,14 @@ console.log(response.data)
 
   return (
     <div className=" h-screen relative">
-      <img
-        className="w-16 mb-10 left-5 top-5 absolute z-20"
-        src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png"
-        alt=""
-      />
+     
+      <div className="w-16 mb-10 left-5 top-5 absolute z-20">
+              
+                   <span className=' font-bold text-2xl'>SwiftCab</span>
+                   
+                  
+              
+              </div>
       <div className="h-[75%] w-screen relative z-10">
         {/* <img
           className=" w-screen h-full object-cover"

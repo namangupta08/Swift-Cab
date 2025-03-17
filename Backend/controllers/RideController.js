@@ -77,6 +77,7 @@ module.exports.confirmRide = async (req, res) => {
   }
 
   const { rideId } = req.body;
+  console.log("req.captain in controller:", req.captain);
 
   try {
       const ride = await confirmRide({ rideId, captain: req.captain });

@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import axios from 'axios'
 import {UserDataContext} from '../context/UserContext'
+import Logo from '../assets/swiftcab-high-resolution-logo copy.png'
 
 const UserSignup = () => {
         const [email, setEmail] = useState("")
@@ -45,11 +46,9 @@ const UserSignup = () => {
   return (
     <div className=" p-7 flex flex-col justify-between h-screen">
     <div>
-      <img
-        className="w-16 mb-10"
-        src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png"
-        alt=""
-      />
+    <div className=" mb-8">
+             <span className=' font-bold text-2xl'>SwiftCab</span>
+             </div>
       <form onSubmit={(e) => {submitHandler(e)}}>
         <h3 className=" text-base font-medium mb-2">What is your Name</h3>
         <div className="flex gap-2 mb-5">

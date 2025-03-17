@@ -3,6 +3,7 @@ import { FaArrowRight } from "react-icons/fa6"
 import { Link, useNavigate } from "react-router-dom"
 import { CaptainDataContext } from "../context/CaptainContext"
 import axios from "axios"
+import Logo from '../assets/swiftcab-high-resolution-logo copy.png'
 
 
 
@@ -61,13 +62,23 @@ const CaptainSignup = () => {
   return (
     <div className=" p-7 flex flex-col justify-between h-screen">
     <div>
-      <div className="flex gap-1">
+      {/* <div className="flex  gap-1">
               <img
-                className="w-16 mb-10"
-                src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png"
-                alt=""
-              /><FaArrowRight className="-mt-[1px]" size={25}/>
+                      className="w-[150px] ml-[-10px] font-black"
+                      //src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png"
+                      src={Logo}
+                      alt=""
+                    />
+              <FaArrowRight className="mt-[18px] -ml-4" size={25}/>
               </div>
+               */}
+               <div className="flex  gap-1 mb-5">
+                       
+                            <span className=' font-bold text-2xl'>SwiftCab</span>
+                            <FaArrowRight className="mt-[6px]" size={25}/>
+                           
+                       
+                       </div>
       <form onSubmit={(e) => {submitHandler(e)}}>
         <h3 className=" text-base font-medium mb-2">What is your Name</h3>
         <div className="flex gap-2 mb-5">

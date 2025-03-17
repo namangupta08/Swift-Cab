@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import Airport from '../assets/Airport-Fall.webp'
+import Logo from '../assets/swiftcab-high-resolution-logo copy.png'
+
 
 const Start = () => {
   return (
@@ -12,13 +14,13 @@ const Start = () => {
         backgroundRepeat: 'no-repeat' 
       }}
       >
-        <img
-          className="w-16 absolute left-5 top-5"
-          src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png"
-          alt=""
-        />
+        
+         <div className="w-16 absolute left-5 top-5">
+              {/* <FaCarSide className="text-5xl" /> */}
+              <span className=' font-bold text-2xl'>SwiftCab</span>
+            </div>
         <div className=" bg-white py-4 px-4 pb-7">
-          <h2 className=" text-3xl font-bold">Get Started with Uber</h2>
+          <h2 className=" text-3xl font-bold">Get Started with Swift Cab</h2>
           <Link to='/login' className=" flex w-full items-center justify-center bg-black text-white py-3 rounded mt-5">Continue</Link>
         </div>
       </div>
